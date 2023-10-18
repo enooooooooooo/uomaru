@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+body{
+  font-family:'游明朝','Yu Mincho','YuMincho','Hiragino Mincho Pro',serif;
+  background-image: url("img/bg.img");
+  background-image: url(../img/bg49.jpg)!important;
+  background-attachment: fixed!important;/*背景固定*/
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+.logo{
+  text-align: center;
+  margin-top: 10px;
+}
+.logo img{
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 10%;
+  margin-top: 10px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding-bottom: 60px!important;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  background: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0))!important;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  font-size: 20px;
+}
+
+.header ul li {
+  width: 100%;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.header ul li:last-child {
+  border-right: none; /* 最後の要素の右側の境界線を除去 */
+}
+
+
+.season_recommend {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center; 
+}
+.recommend {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.recommend h2 {
+  width: 50%;
+  margin: auto;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top:solid 5px #91002C;/*線の種類・太さ・色*/
+  background-color:#FACD89;/*背景色*/
+  box-shadow:3px 1px 4px rgba(0, 0, 0, 0.2);/*ボックス影*/
+}
+
+
+.recommend_explanation{
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.recommend_img {
+  width: 50%;
+}
+
+.product{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  background-color: #fff; /* ボックス背景色 */
+  position:relative; /*配置(ここを基準に)*/
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);/*ボックス影*/
+  }
+
+
+.product .name{
+  background-color: goldenrod; /* タイトル背景色 */
+  font-size: 1em;/* タイトル文字の大きさ */
+  color: #000; /* タイトル文字色 */
+  text-align: center;	/* タイトル中央寄せ */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:100%;/*横幅最大幅 */
+  }
+
+  .comment {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    height: auto;
+  }
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.logo2{
+  text-align: center;
+}
+.logo2 img{
+  text-align: center;
+  margin-bottom: 5px;
+  width: 10%;
+  margin-top: 20px;
+}
+
+.name_uomaru,
+.address,
+.tel,
+.cr {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: #FFF;
+}
+
+.footer .tel a[href^="tel:"]{
+  pointer-events: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:639px){
+  body{
+    font-family:'游明朝','Yu Mincho','YuMincho','Hiragino Mincho Pro',serif;
+    background-image: url("img/bg.img");
+    background-image: url(../img/bg49.jpg)!important;
+    background-attachment: fixed!important;/*背景固定*/
+  }
+  
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .logo img {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 20%;
+    margin-top: 10px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;/*////////////////////*/
+  
+  }
+  
+  .header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; /* 画面幅に合わせて折り返す */
+  }
+  
+  .header ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* ボーダーを下に設定 */
+    margin-top: 10px;
+    padding-bottom: 10px; /* 下部の余白を追加 */
+    border-right: none;/*要素の右側の境界線を除去*/
+  }
+  
+  .header ul li:last-child {
+    border-bottom: none;
+  }
+  
+  
+  .season_recommend {
+    font-size: 40px;
+    margin-top: 300px;
+    text-align: center; 
+  }
+  
+  .recommend {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .recommend h2 {
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top:solid 5px #91002C;/*線の種類・太さ・色*/
+    background-color:#FACD89;/*背景色*/
+    box-shadow:3px 1px 4px rgba(0, 0, 0, 0.2);/*ボックス影*/
+  }
+  
+  .recommend1,.recommend2{
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  
+  .recommend_img {
+    width: 100%;
+  }
+  
+  .product{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: #fff; /* ボックス背景色 */
+    position:relative; /*配置(ここを基準に)*/
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);/*ボックス影*/
+    }
+  
+  
+  .product .name{
+    background-color: goldenrod; /* タイトル背景色 */
+    font-size: 1em;/* タイトル文字の大きさ */
+    color: #000; /* タイトル文字色 */
+    text-align: center;	/* タイトル中央寄せ */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;/*横幅最大幅 */
+    }
+  
+    .comment {
+      font-size: 20px;
+      text-align: left;
+      padding: 10px;
+      height: auto;
+    }
+  
+    .footer {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      height: auto;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: block;
+      padding-bottom: 30px;
+    }
+    
+    .logo2{
+      text-align: center;
+    }
+    .logo2 img{
+      margin-bottom: 5px;
+      width: 20%;
+      margin-top: 20px;
+    }
+    
+    .name_uomaru,
+    .address,
+    .tel,
+    .cr {
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+      color: #FFF;
+    }
+    
+    .footer .tel a[href^="tel:"]{
+      pointer-events: none;
+      color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:640px) and (max-width:1023px) {
+  body{
+    font-family:'游明朝','Yu Mincho','YuMincho','Hiragino Mincho Pro',serif;
+    background-image: url("img/bg.img");
+    background-image: url(../img/bg49.jpg)!important;
+    background-attachment: fixed!important;/*背景固定*/
+  }
+  
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+  .logo{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .logo img{
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 15%;
+    margin-top: 10px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+  }
+  
+  .header ul li {
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .header ul li:last-child {
+    border-right: none; /* 最後の要素の右側の境界線を除去 */
+  }
+  
+  
+  .season_recommend {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center; 
+  }
+  .recommend {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .recommend h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top:solid 5px #91002C;/*線の種類・太さ・色*/
+    background-color:#FACD89;/*背景色*/
+    box-shadow:3px 1px 4px rgba(0, 0, 0, 0.2);/*ボックス影*/
+  }
+  
+  .recommend1,.recommend2{
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  
+  .recommend_img {
+    width: 80%;
+  }
+  
+  .product{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background-color: #fff; /* ボックス背景色 */
+    position:relative; /*配置(ここを基準に)*/
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);/*ボックス影*/
+    }
+  
+  
+  .product .name{
+    background-color: goldenrod; /* タイトル背景色 */
+    font-size: 1em;/* タイトル文字の大きさ */
+    color: #000; /* タイトル文字色 */
+    text-align: center;	/* タイトル中央寄せ */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;/*横幅最大幅 */
+    }
+  
+    .comment {
+      font-size: 20px;
+      text-align: left;
+      padding: 10px;
+      height: auto;
+    }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 20px;
+  }
+  
+  .logo2{
+    text-align: center;
+  }
+  .logo2 img{
+    text-align: center;
+    margin-bottom: 5px;
+    width: 10%;
+    margin-top: 20px;
+  }
+  
+  .name_uomaru,
+  .address,
+  .tel,
+  .cr {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+  }
+  
+  .footer .tel a[href^="tel:"]{
+    pointer-events: none;
+    color: white;
+  }
+}
